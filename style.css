@@ -4,39 +4,123 @@
     box-sizing: border-box;
 }
 
-body{
-    font-size: 16px;
-    color: #4a4a4a;
+.container{
+    max-width: 1180px;
+    margin: 0 auto;
 }
 
-#block1{
-    background: linear-gradient(0deg, rgba(255, 133, 22, 0.5), rgba(255, 133, 22, 0.5));
-    color: #ffffff;
+
+/* ---------------------------------------------- HEADER ----------------------------------------------------- */
+
+header{
+    height: 794px;
+    background: url('assets/img/fon/bg_orange.png')no-repeat center;
+    background-size: 100% 100%;
+    padding-top: 55px;
+    color: white;
 }
 
-#block1 h1{
-    font-family: 'Open Sans';
-    font-weight: 800;
+header .container{
+    position: relative;
+}
+
+.logo-block{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 19px;
+    line-height: 36px;
+    margin-bottom: 29px;
+}
+
+.human-block__img{
+    position: absolute;
+    z-index: 0;
+    width: 100%;
+    text-align: center;
+}
+
+.human-block__content{
+    position: absolute;
+    width: 100%;
+    z-index: 100;
+}
+
+.os-block{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 110px 60px 0;
+}
+
+.os-item{
+    font-family: 'Source Sans Pro', sans-serif;
+    text-align: center;
+    font-weight: bold;
+    font-size: 24px;
+    /* line-height: 30px; */
+}
+
+.human-block__title p{
+    text-align: center;
+}
+
+.human-block__title p:nth-child(1){
+    font-family: 'Source Sans Pro', sans-serif;
     font-size: 56px;
-    text-align: center;
-    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 0.845em;
 }
 
-h2{
-    font-family: 'Open Sans';
-    font-weight: 400;
+.human-block__title p:nth-child(2){
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 128px;
+    font-weight: 800;
+    line-height: 100px;
+}
+
+.human-block__title p:nth-child(3){
+    font-family: 'Open Sans', sans-serif;
     font-size: 36px;
+    font-weight: 800;
+    letter-spacing: 0.37em;
+}
+
+.btn{
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 17px;
+    line-height: 23px;
+    border: none;
+}
+
+.btn-center{
+    width: 186px;
+    height: 66px;
+}
+
+.human-block__btn{
+    width: 100%;
     text-align: center;
-    text-transform: uppercase;
+    margin-top: 50px;
 }
 
-#block2 h2,
-#block4 h2,
-#block6 h2{
-    color: #000000;
+
+/* --------------------------------- цвета ---------------------*/
+
+.orange{
+    background-color: rgba(255, 126, 3, 1);
 }
 
-#block3 h2,
-#block5 h2{
-    color: #ffffff;
+.white{
+    background-color: white;
+    border-color: white;
+}
+
+.black{
+    background-color: rgba(53, 53, 53, 1);
+    border-color: white;
 }
